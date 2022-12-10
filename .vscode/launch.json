@@ -8,6 +8,20 @@
             "type": "java",
             "name": "Launch App",
             "request": "launch",
+            "mainClass": "App",
+            "projectName": "fork_java-basics-1_2f6aae0f"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "com.bt.java.basics.App",
+            "projectName": "fork_java-basics-1_2f6aae0f"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
             "mainClass": "com.bt.java.basics.App",
             "projectName": "java-basics_6b8c15e2"
         },

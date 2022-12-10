@@ -1,49 +1,78 @@
 package com.bt.java.basics;
 
+import javax.swing.text.FlowView;
+
 public class App {
     /*
      * Jedes Java-Programm hat eine statische Main-Methode als
      * Einsprungspunkt.
      */
+    /**
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
 
-        // Die Funktion 'println' schreibt den Text in "" auf die Konsole.
-        System.out.println("Hallo DevOps-Klasse");
+        // Write a program which prints the following character array with a reverse for loop
 
-        // Exercise 1: Perform a widening, explicit type conversion with int and short
-        short valueShort = 128;
-        int valueInt = (int) valueShort;
-        System.out.println("Exercise 1: " + valueInt);
+        char[] susanArray = {'S', 'U', 'S', 'A', 'N'};
+        System.out.println(susanArray);
 
-        // Exercise 2: Perform a constraining, explicit type conversion with int and byte
-        int valueInt2 = 1308;
-        byte valueByte2 = (byte) valueInt2;
-        System.out.println("Exercise 2: " + valueByte2);
+        for (int i = 0; i < susanArray.length; i++) {
+            System.out.println(susanArray[i]);
+        }
+        
+      
+    // Aufgabe FizzBuzz
 
-        // Exercise 3: Perform a widening, implicit type conversion with short and float​
-        short valueShort3 = 19999;
-        float valueFloat3 = valueShort3;
-        System.out.println("Exercise 3: " + valueFloat3);
+    //int[] nullBisHundert = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ,12, 100 }; 
+    //int x = {1 -100}
 
-        // Exercise 4: Perform a constraining, implicit type conversion with short and float in a division​
-        short valueShort4 = 5;
-        float division4 = valueShort4 / 2;
-        System.out.println("Exercise 4: " + division4);
+    for (int x = 0; x < 100; x++) {
+       
+        if (x%3 == 0){
+            System.out.println("Fizz");
+    }   if (x%5 == 0) {
+            System.out.println("Buzz");
+    }   if ((x%3 == 0) && (x%5 == 0)) {
+            System.out.println("FizzBuzz");
+    }   else {
+            System.out.println(x);
+    } 
+    }
 
-        /* 
-         * Exercise 5: Rewrite the arithmetic expression from exercise 4 
-         * into a correct expression with implicit type conversion​
-         */
-        float devision5 = valueShort4 / 2.0f;
-        System.out.println("Exercise 5: " + devision5);
+    // Aufgabe ATM with Switch
 
-        /*
-         * Aufgabe 6: Rewrite the arithmetic expression from exercise 4 
-         * into a correct expression with explicit type conversion​
-         */
-        float devision6 = valueShort4 / (float) 2;
-        System.out.println("Exercise 6: " + devision6);
-
-    }   
-
+    Scanner in = new Scanner(System.in);
+    int input = Integer.parseInt(in.nextLine());
+    
+    switch (input) {
+        case 1: 1                   
+            System.out.println("Black");
+            break;
+        case 2: 2
+            System.out.println("White");
+    }       break;
+        case 3: 3 
+            System.out.println("Red");
+            break;
+        case 4: 4    
+            System.out.println("Green");
+        default:
+            System.out.println("This is not a valid entry. Please type a number between 1 and 4");
+    
 }
+    
+    
+    
+    
+            /*  iteration over all elements:
+
+    //string[] fruits = {"Kiwi", "Pear", "Cherry"}
+
+    for (fruit: fruits){
+        System.out.println("Fruit type: " + fruit);
+    }
+
+    }
+    }
