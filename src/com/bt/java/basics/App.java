@@ -1,16 +1,16 @@
-package com.bt.java.basics;
+/*package com.bt.java.basics;
 
 import javax.swing.text.FlowView;
 
 public class App {
-    /*
+    
      * Jedes Java-Programm hat eine statische Main-Methode als
      * Einsprungspunkt.
      */
-    /**
+    /*
      * @param args
      * @throws Exception
-     */
+     *
     public static void main(String[] args) throws Exception {
 
         // Write a program which prints the following character array with a reverse for loop
@@ -76,3 +76,4 @@ public class App {
 
     }
     }
+    */
