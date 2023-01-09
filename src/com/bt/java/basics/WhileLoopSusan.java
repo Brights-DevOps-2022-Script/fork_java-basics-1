@@ -16,10 +16,10 @@ public class WhileLoopSusan {
     public static void main(String[] args) {
         
      // User input    
-    Scanner myObj = new Scanner(System.in); // Create a Scanner object
-    System.out.println("Enter a number between 1 and 7");  
+    Scanner keyboardInput = new Scanner(System.in); // Create a Scanner object
+    System.out.println("Enter a number between 1 and 7");  // Output on the command line
         
-    int zahl = myObj.nextInt();  // Read user input
+    int zahl = keyboardInput.nextInt();  // Read user input and pass it to an integer variable named 'zahl'
     
 
     // while loop
@@ -30,8 +30,9 @@ public class WhileLoopSusan {
       System.out.println(i);
       i++;
     }  
-    //System.out.println("done");
-    }
+    System.out.println("done");
+    keyboardInput.close(); 
+  }
 }
 
  
